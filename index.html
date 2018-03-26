@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>MyDateTime</title>
+
+    <link rel="stylesheet" href="bootstrap.min.css"/>
+    <link rel="stylesheet" href="myDateTime.css"/>
+    <link rel="stylesheet" href="bootstrap-datepicker.css"/>
+
+    <script src="bootstrap.min.css"></script>
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap-datepicker.min.js"></script>
+    <script src="datepicker-fr.js"></script>
+
+</head>
+
+<body>
+<input class="result"><br><br>
+
+<div class="row">
+    <div id="myDateTime" class="col-xs-6"></div>
+</div>
+
+<script src="myDataTime.js"></script>
+
+<script>
+    myDatapiker({
+        startDate: "2018-02-02",
+        endDate: "2018-05-05",
+        defaultDate: "2018-02-02",
+        defaultHour: 15,
+        defaultMinute: 15
+    });
+</script>
+
+</body>
+</html>
